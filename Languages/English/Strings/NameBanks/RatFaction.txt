@@ -1,0 +1,14 @@
+Swarm
+Disease
+Epidemic
+Wave
+Death
+Pestilence
+Hunger
+Blight
+Bane
+Blister
+Pain
+Scourge
+Plague
+Bug

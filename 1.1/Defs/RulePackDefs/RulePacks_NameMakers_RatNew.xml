@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>EM_RatNameNew</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt; [RatColour] [RatBase]</li>
+        <li>name-&gt;[RatBase] [RatNoun]</li>
+        <li>name-&gt; [RatColour] [RatNoun]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>RatBase</keyword>
+          <path>NameBanks/RatBase</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>RatNoun</keyword>
+          <path>NameBanks/RatNoun</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>RatColour</keyword>
+          <path>NameBanks/RatColour</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>EM_RatFacNameNew</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[RatFaction] of the [RatColour]-[RatItem]</li>
+        <li>name-&gt;[RatColour] [RatItem] [RatFaction]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>RatFaction</keyword>
+          <path>NameBanks/RatFaction</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>RatItem</keyword>
+          <path>NameBanks/RatItem</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>RatColour</keyword>
+          <path>NameBanks/RatColour</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+</Defs>

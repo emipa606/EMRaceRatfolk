@@ -1,0 +1,17 @@
+Shelter
+Eye
+Fur
+Hair
+Scale
+Gear
+Gem
+Leg
+Claw
+Paw
+Scar
+Blade
+Head
+Pain
+Stare
+Grasp
+Hiss
