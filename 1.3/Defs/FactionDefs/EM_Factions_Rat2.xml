@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef ParentName="FactionBase">
+    <defName>EM_RatfolkNew</defName>
+    <label>ratfolk clan</label>
+    <description>These are a people reduced to mere steps above the animals around them. Years of unending hardship has bred a small, physically weak, but ferocious peoples who live to steal what they can from those more fortunate. \n\n With the most meagre of tools and clothing they may seem feel, but what they lack in physicality they make up for in their numbers.</description>
+    <pawnsPlural>ratfolk</pawnsPlural>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(40, 3)</li>
+        <li>(400, 1)</li>
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <canSiege>false</canSiege>
+    <autoFlee>true</autoFlee>
+    <canStageAttacks>true</canStageAttacks>
+    <factionIconPath>Things/RatIcon</factionIconPath>
+    <geneticVariance>1</geneticVariance>
+    <colorSpectrum>
+      <li>(0.8, 0.3, 0.2)</li>
+      <li>(0.5, 0, 0)</li>
+      <li>(0.4, 0.4, 0.6)</li>
+    </colorSpectrum>
+    <permanentEnemy>true</permanentEnemy>
+    <factionNameMaker>EM_RatFacNameNew</factionNameMaker>
+    <settlementNameMaker>EM_RatNameNew</settlementNameMaker>
+    <techLevel>Neolithic</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <leaderTitle>king</leaderTitle>
+    <allowedCultures>
+      <li>Rattatta</li>
+    </allowedCultures>
+    <caravanTraderKinds>
+      <li>Caravan_Neolithic_BulkGoods</li>
+      <li>Caravan_Neolithic_WarMerchant</li>
+      <li>Caravan_Neolithic_Slaver</li>
+      <li>Caravan_Neolithic_ShamanMerchant</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Neolithic_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Neolithic_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-40</min>
+      <max>40</max>
+    </allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(800, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <EM_RatWarriorNew>60</EM_RatWarriorNew>
+          <EM_RatArcherNew>100</EM_RatArcherNew>
+          <EM_RatHunterNew>70</EM_RatHunterNew>
+          <EM_RatHeavyArcherNew>70</EM_RatHeavyArcherNew>
+          <EM_RatBerserkerNew>60</EM_RatBerserkerNew>
+          <EM_RatChiefNew>70</EM_RatChiefNew>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <EM_RatTraderNew>1</EM_RatTraderNew>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2.5</Alpaca>
+          <Elephant>2</Elephant>
+        </carriers>
+        <guards>
+          <EM_RatWarriorNew>60</EM_RatWarriorNew>
+          <EM_RatArcherNew>100</EM_RatArcherNew>
+          <EM_RatHunterNew>70</EM_RatHunterNew>
+          <EM_RatHeavyArcherNew>70</EM_RatHeavyArcherNew>
+          <EM_RatBerserkerNew>60</EM_RatBerserkerNew>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <EM_RatWarriorNew>60</EM_RatWarriorNew>
+          <EM_RatArcherNew>100</EM_RatArcherNew>
+          <EM_RatHunterNew>70</EM_RatHunterNew>
+          <EM_RatHeavyArcherNew>70</EM_RatHeavyArcherNew>
+          <EM_RatBerserkerNew>60</EM_RatBerserkerNew>
+          <EM_RatChiefNew>70</EM_RatChiefNew>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+  </FactionDef>
+</Defs>
